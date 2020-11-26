@@ -127,4 +127,11 @@ class RunSingleJobHandler extends Handler {
 		return $validator->validateEvent( $event );
 	}
 
+	/**
+	 * Indicates whether this route requires write access.
+	 * @return bool
+	 */
+	public function needsWriteAccess() {
+		return false;
+	}
 }
